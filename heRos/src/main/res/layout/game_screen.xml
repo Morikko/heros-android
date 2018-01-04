@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.eu.rose.heros.Control"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal" />
+
+    <Button
+        android:id="@+id/return_button"
+        style="@style/ButtonStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Return" />
+
+    <TextView
+        android:id="@+id/game_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+        android:padding="5dp"
+        android:text="Game name"
+        android:textAlignment="gravity"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/player1_info"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/game_name"
+        android:gravity="right"
+        android:padding="5dp"
+        android:text="Player 1 info"
+        android:textAlignment="gravity"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/player2_info"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/player1_info"
+        android:gravity="right"
+        android:padding="5dp"
+        android:text="Player 2 info"
+        android:textAlignment="gravity"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/player3_info"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/player2_info"
+        android:gravity="right"
+        android:padding="5dp"
+        android:text="Player 3 info"
+        android:textAlignment="gravity"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/player4_info"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/player3_info"
+        android:gravity="right"
+        android:padding="5dp"
+        android:text="Player 4 info"
+        android:textAlignment="gravity"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/current_hp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/joystick_view"
+        android:gravity="right"
+        android:padding="5dp"
+        android:text="100"
+        android:textAlignment="gravity"
+        android:textColor="#00FF00"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@+id/fire_direct_button"
+        android:padding="5dp"
+        android:text="HeRos Name"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:layout_alignParentEnd="false" />
+
+    <TextView
+        android:id="@+id/assigned_team"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/return_button"
+        android:layout_alignLeft="@id/return_button"
+        android:padding="5dp"
+        android:text="Team"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <com.zerokol.views.JoystickView
+        android:id="@+id/joystick_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:keepScreenOn="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        >
+        <ImageButton
+            android:id="@+id/heal_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_heal"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="Heal" />
+
+        <ImageButton
+            android:id="@+id/boost_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_boost"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="NO2" />
+
+        <ImageButton
+            android:id="@+id/fire_global_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_global_shot"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="Fire" />
+
+
+        <ImageButton
+            android:id="@+id/fire_direct_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_direct_shot"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

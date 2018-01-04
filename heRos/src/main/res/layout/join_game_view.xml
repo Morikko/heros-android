@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="org.eu.rose.heros.Control" >
+
+    <ImageView
+        android:id="@+id/logo_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_logo_full"
+        />
+
+    <Button
+        android:id="@+id/disconnect_button"
+        style="@style/ButtonStyle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Disconnect" />
+
+    <TextView
+        android:id="@+id/connection_status"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Connection status"
+        android:textColor="#00236D"
+        android:layout_below="@+id/disconnect_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:id="@+id/games_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/join_button"
+        style="@style/ButtonStyle"
+        android:layout_below="@+id/games_spinner"
+        android:layout_centerHorizontal="true"
+        android:text="Join the game!"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        style="@style/ButtonStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Cancel" />
+
+</RelativeLayout>

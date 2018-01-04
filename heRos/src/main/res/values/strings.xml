@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="create_game_name">Create A Game</string>
+    <string name="game_name">HeRos Control</string>
+    <string name="menu_name">Menu</string>
+    <string name="join_game_name">Join A Game</string>
+    <string name="scan_name">Scan Network</string>
+    <string name="app_name">HeRos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
